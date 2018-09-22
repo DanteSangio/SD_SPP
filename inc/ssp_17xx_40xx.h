@@ -33,8 +33,8 @@
 #define __SSP_17XX_40XX_H_
 
 #include <stdint.h>
-#include <stdutils.h>
 #include <lpc_types.h>
+
 
 #ifdef __cplusplus
 extern "C" {
@@ -48,17 +48,17 @@ extern "C" {
 /**
  * @brief SSP register block structure
  */
-typedef struct {			/*!< SSPn Structure         */
-	__IO uint32_t CR0;		/*!< Control Register 0. Selects the serial clock rate, bus type, and data size. */
-	__IO uint32_t CR1;		/*!< Control Register 1. Selects master/slave and other modes. */
-	__IO uint32_t DR;		/*!< Data Register. Writes fill the transmit FIFO, and reads empty the receive FIFO. */
-	__I  uint32_t SR;		/*!< Status Register        */
-	__IO uint32_t CPSR;		/*!< Clock Prescale Register */
-	__IO uint32_t IMSC;		/*!< Interrupt Mask Set and Clear Register */
-	__I  uint32_t RIS;		/*!< Raw Interrupt Status Register */
-	__I  uint32_t MIS;		/*!< Masked Interrupt Status Register */
-	__O  uint32_t ICR;		/*!< SSPICR Interrupt Clear Register */
-	__IO uint32_t DMACR;	/*!< SSPn DMA control register */
+typedef struct LPC_SSP_T{			/*!< SSPn Structure         */
+	 uint32_t CR0;		/*!< Control Register 0. Selects the serial clock rate, bus type, and data size. */
+	 uint32_t CR1;		/*!< Control Register 1. Selects master/slave and other modes. */
+	 uint32_t DR;		/*!< Data Register. Writes fill the transmit FIFO, and reads empty the receive FIFO. */
+	 uint32_t SR;		/*!< Status Register        */
+	 uint32_t CPSR;		/*!< Clock Prescale Register */
+	 uint32_t IMSC;		/*!< Interrupt Mask Set and Clear Register */
+	 uint32_t RIS;		/*!< Raw Interrupt Status Register */
+	 uint32_t MIS;		/*!< Masked Interrupt Status Register */
+	 uint32_t ICR;		/*!< SSPICR Interrupt Clear Register */
+	 uint32_t DMACR;	/*!< SSPn DMA control register */
 } LPC_SSP_T;
 
 /**
