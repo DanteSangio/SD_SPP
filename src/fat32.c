@@ -23,11 +23,15 @@ https://www.win.tue.nl/~aeb/linux/fs/fat/fat-1.html
 http://www.tavi.co.uk/phobos/fat.html
  *************************************************************************************************************************************/
 
+//#include "chip_lpc175x_6x.h"
 #include <string.h>
 #include "stdutils.h"
 #include "fat32.h"
 //#include "uart.h"
 #include "sdcard.h"
+#include "sysinit.c"
+
+
 
 #define SET     1
 #define DEBUGOUT(...) printf(__VA_ARGS__)

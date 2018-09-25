@@ -153,8 +153,8 @@ typedef unsigned  int  uint32_t;
 #define NULL_CHAR          0x00u
 
 
-#define FALSE              0x00u
-#define TRUE               0x01u
+//#define FALSE              0x00u
+//#define TRUE               0x01u
 
 #define C_NOTOK_U8         0x00u
 #define C_OK_U8            0x01u

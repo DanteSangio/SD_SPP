@@ -43,7 +43,7 @@
  * Public types/enumerations/variables
  ****************************************************************************/
 
-#if defined(NO_BOARD_LIBA)
+#if defined(NO_BOARD_LIB)
 const uint32_t OscRateIn = 12000000;
 const uint32_t RTCOscRateIn = 32768;
 #endif

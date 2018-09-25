@@ -3,8 +3,8 @@
 	<name>SD_SSP</name>
 	<comment></comment>
 	<projects>
+		<project>FRTOS</project>
 		<project>lpc_chip_175x_6x</project>
-		<project>lpc_board_nxp_lpcxpresso_1769</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -7,9 +7,12 @@
  Description : main definition
 ===============================================================================
 */
+#include "sysinit.c"
 #include "chip.h"
 #include "sdcard.h"
-#include "ssp_17xx_40xx.h"
+//#include "ssp_17xx_40xx.h"
+#include <cr_section_macros.h>
+
 
 //#include "RegsLPC1769.h"
 #define MFRC522_BIT_RATE 4000000
@@ -22,10 +25,6 @@
 #define MIN_BALANCE 300
 #define SDCS								0,6
 
-#if defined(NO_BOARD_LIB)
-const uint32_t OscRateIn = 12000000;
-const uint32_t RTCOscRateIn = 32768;
-#endif
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 /* main

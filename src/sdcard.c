@@ -23,11 +23,14 @@ https://www.win.tue.nl/~aeb/linux/fs/fat/fat-1.html
 http://www.tavi.co.uk/phobos/fat.html
  *************************************************************************************************************************************/
 
-#include "ssp_17xx_40xx.h"
+#include "chip.h"
+//#include "ssp_17xx_40xx.h"
 #include "sdcard.h"
 //#include "uart.h"
 #include "fat32.h"
-#include "chip_lpc175x_6x.h"
+//#include "sysinit.c"
+
+
 
 #define LPC_SSP                             LPC_SSP1
 #define SDCS								0,6
