@@ -23,13 +23,13 @@
 #define DEBUGSTR(...) printf(__VA_ARGS__)
 
 #define MIN_BALANCE 300
-#define SDCS								0,6
+#define SDCS	0,6
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-/* main
-*/
-int main(void)
+/* main*/
+int main (void)
+
 {
 
 	uint8_t sdcardType,returnStatus;
